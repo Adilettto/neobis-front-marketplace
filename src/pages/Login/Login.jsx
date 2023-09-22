@@ -25,7 +25,7 @@ const Login = () => {
             <input type={showPassword ? "text" : "password"} className={styles.login__block_inputPassword} placeholder='Password'/>
             <img src={showPassword ? eyeOpen : eyeDisable} alt="eye-open" className={styles.login__block_eyeIcon} onClick={togglePasswordVisibility}/>
             <button className={styles.login__block_loginBtn}>Login</button>
-            <Link to="/" className={styles.login__block_signupLink}>Sign Up</Link>
+            <Link to="/signup" className={styles.login__block_signupLink}>Sign Up</Link>
         </div>
     </div>
   )

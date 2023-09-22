@@ -1,0 +1,15 @@
+.backBtn {
+    display: flex;
+    cursor: pointer;
+    
+    &_backText {
+        margin-top: 2px;
+    }
+
+    &_arrowIcon {
+        padding: 3px 15px;
+        border-radius: 20px;
+        background-color: rgb(205, 203, 203);
+        margin-right: 0.5rem;
+    }
+}
