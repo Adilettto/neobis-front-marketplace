@@ -1,0 +1,53 @@
+.profileMenu {
+  width: 35%;
+  margin-left: 42px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 24px;
+
+  &__profileLink {
+    display: flex;
+    margin-bottom: 1rem;
+
+    &__icon {
+      width: 60px;
+      height: 60px;
+      margin-right: 1rem;
+    }
+
+    &__dataBox {
+      margin-top: 0.5rem;
+
+      &__header {
+        font-size: 18px;
+      }
+
+      &__email {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__likedLink,
+  &__myProductsLink,
+  &__logoutLink {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__logoutLink {
+    margin-top: 5rem;
+  }
+
+  &__rightIcon {
+    margin-top: 0.3rem;
+  }
+
+  &__header {
+    width: 7rem;
+    margin-right: 12rem;
+    margin-top: 0.2rem;
+    font-size: 16px;
+  }
+}
