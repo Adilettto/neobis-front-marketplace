@@ -5,6 +5,8 @@ import Header from "../../components/Header/Header";
 import { useNavigate } from "react-router-dom";
 import profileIcon from "../../assets/profilePhoto.png";
 import { Input, Modal } from "antd";
+import phoneIcon from "../../assets/phoneIcon.png"
+import NextBtn from "../../components/NextBtn/NextBtn";
 
 const Profile = () => {
   const navigate = useNavigate();
@@ -60,13 +62,15 @@ const Profile = () => {
             placeholder="Email"
           />
           <Modal
-            title="Change phone number"
+            title={<span className={styles.profile__profileBlock__modalTitle}>Change phone number</span>}
             visible={isModalVisible}
-            onOk={handleToggleModal}
+            footer={null}
             onCancel={handleToggleModal}
             className={styles.profile__profileBlock__modal}
           >
+            <img className={styles.profile__profileBlock__modalIcon} src={phoneIcon} alt="phone-icon" />
             <Input placeholder="Add number"/>
+            <NextBtn/>
           </Modal>
         </div>
       </div>

@@ -31,5 +31,17 @@
       padding: 0.5rem 1rem;
 
     }
+
+    &__modalTitle {
+      text-align: center;
+      width: 100%;
+      display: block;
+    }
+
+    &__modalIcon {
+      width: 25%;
+      height: 25%;
+      margin-left: 38%;
+    }
   }
 }
