@@ -1,11 +1,12 @@
 .profile {
   display: flex;
   gap: 5%;
+  height: 100vh;
 
   &__rightBlock {
     background: var(--Background, #f7f6f9);
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding-top: 24px;
     padding-left: 6rem;
     display: flex;
