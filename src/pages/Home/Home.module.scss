@@ -1,0 +1,61 @@
+.home {
+  padding: 1% 2%;
+  background: #F0F0F0;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+      display: flex;
+      align-items: center;
+    }
+
+    &__logoImg {
+      width: 15%;
+    }
+
+    &__logoTitle {
+      font-size: 20px;
+      text-align: center;
+      padding-left: 1rem;
+      padding-top: 0.3rem;
+    }
+
+    &__rightBlock {
+      height: 30%;
+      width: 45%;
+      padding-top: 0;
+      display: flex;
+      padding-bottom: 1rem;
+
+      &__account {
+        width: 50%;
+        margin-left: 5rem;
+        margin-right: 0;
+        padding-right: 0;
+        display: flex;
+
+        &_name {
+          margin-top: 1rem;
+        }
+        &_name h5 {
+          font-size: 18px;
+        }
+
+        &_img {
+          margin-top: 0.8rem;
+          margin-left: 1rem;
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 1.5rem;
+  }
+}

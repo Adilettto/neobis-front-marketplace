@@ -37,7 +37,7 @@ const PasswordBlock = () => {
         placeholder="Confirm password"
         suffix={<EyeInvisibleFilled />}
       />
-      <NextBtn onClick={handleNext} />
+      <NextBtn onClick={handleNext} text="Next"/>
     </div>
   );
 };

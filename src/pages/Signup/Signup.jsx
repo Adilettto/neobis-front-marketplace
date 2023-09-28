@@ -34,7 +34,7 @@ const Signup = () => {
           placeholder="Email"
           suffix={<MailOutlined />}
         />
-        <NextBtn onClick={handleNext} />
+        <NextBtn onClick={handleNext} text="Next"/>
         {/* how can i put onClick method to components? */}
       </div>
     </div>

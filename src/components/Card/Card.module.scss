@@ -1,0 +1,27 @@
+.card {
+    width: 154px;
+    height: 184px;
+    padding: 0.4rem;
+    background-color: #fff;
+    border-radius: 10px;
+
+    &__title {
+        font-size: 14px;
+    }
+
+    &__price {
+        font-size: 14px;
+        color: #5D5FEF;
+    }
+
+    &__like {
+        display: flex;
+
+        &_count {
+            margin-left: 0.5rem;
+            font-size: 12px;
+            margin-top: 4px;
+            color: #C1C1C1;
+        }
+    }
+}

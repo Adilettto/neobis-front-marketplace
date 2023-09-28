@@ -5,8 +5,10 @@ import Header from "../../components/Header/Header";
 import { useNavigate } from "react-router-dom";
 import profileIcon from "../../assets/profilePhoto.png";
 import { Input, Modal } from "antd";
-import phoneIcon from "../../assets/phoneIcon.png"
+import phoneIcon from "../../assets/phoneIcon.png";
 import NextBtn from "../../components/NextBtn/NextBtn";
+import InputMask from "react-input-mask";
+import cn from "classnames";
 
 const Profile = () => {
   const navigate = useNavigate();
@@ -18,7 +20,7 @@ const Profile = () => {
 
   const handleToggleModal = () => {
     setIsModalVisible(!isModalVisible);
-  }
+  };
   return (
     <div className={styles.profile}>
       <ProfileMenu />
@@ -51,9 +53,8 @@ const Profile = () => {
           />
           <br />
           <Input
-            className={styles.profile__profileBlock__input}
+            className={cn(styles.profile__profileBlock__input, styles.profile__profileBlock__inputNumber)}
             value="Add number"
-            readOnly
             suffix="0 (000) 000 000"
             onClick={handleToggleModal}
           />
@@ -62,15 +63,34 @@ const Profile = () => {
             placeholder="Email"
           />
           <Modal
-            title={<span className={styles.profile__profileBlock__modalTitle}>Change phone number</span>}
+            title={
+              <span className={styles.profile__profileBlock__modalTitle}>
+                Change phone number
+              </span>
+            }
             visible={isModalVisible}
             footer={null}
             onCancel={handleToggleModal}
             className={styles.profile__profileBlock__modal}
           >
-            <img className={styles.profile__profileBlock__modalIcon} src={phoneIcon} alt="phone-icon" />
-            <Input placeholder="Add number"/>
-            <NextBtn/>
+            <img
+              className={styles.profile__profileBlock__modalIcon}
+              src={phoneIcon}
+              alt="phone-icon"
+            />
+            <h5 className={styles.profile__profileBlock__modalRequest}>
+              Enter your phone number
+            </h5>
+            <p>We will send you an SMS with a confirmation code.</p>
+            <InputMask
+              className={styles.profile__profileBlock__modalInputMask}
+              mask="0 (000) 000 000"
+              placeholder="0 (000) 000 000"
+            />
+             
+             
+            
+            <NextBtn text="Next"/>
           </Modal>
         </div>
       </div>
