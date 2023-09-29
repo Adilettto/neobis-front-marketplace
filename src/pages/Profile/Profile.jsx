@@ -53,7 +53,10 @@ const Profile = () => {
           />
           <br />
           <Input
-            className={cn(styles.profile__profileBlock__input, styles.profile__profileBlock__inputNumber)}
+            className={cn(
+              styles.profile__profileBlock__input,
+              styles.profile__profileBlock__inputNumber
+            )}
             value="Add number"
             suffix="0 (000) 000 000"
             onClick={handleToggleModal}
@@ -87,10 +90,7 @@ const Profile = () => {
               mask="0 (000) 000 000"
               placeholder="0 (000) 000 000"
             />
-             
-             
-            
-            <NextBtn text="Next"/>
+            <NextBtn text="Next" />
           </Modal>
         </div>
       </div>

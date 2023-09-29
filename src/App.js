@@ -5,6 +5,8 @@ import Signup from './pages/Signup/Signup';
 import PasswordsRecovery from './pages/PasswordRecovery/PasswordRecovery';
 import Profile from './pages/Profile/Profile';
 import Home from './pages/Home/Home';
+import Liked from './pages/Liked/Liked';
+import MyProducts from './pages/MyProducts/MyProducts';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/password-recovery" element={<PasswordsRecovery/>}/>
         <Route path='/profile' element={<Profile/>}/>
         <Route path='/home' element={<Home/>} />
+        <Route path='/liked' element={<Liked/>} />
+        <Route path='/my-products' element={<MyProducts/>}/>
       </Routes>
     </div>
   );

@@ -5,6 +5,8 @@ import heartIcon from "../../assets/heartIcon.png";
 import myProductsIcon from "../../assets/myProductsIcon.png";
 import logoutIcon from "../../assets/logOutIcon.png";
 import { RightOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
+
 
 const ProfileMenu = () => {
   return (
@@ -24,21 +26,21 @@ const ProfileMenu = () => {
           </p>
         </div>
       </div>
-      <div className={styles.profileMenu__likedLink}>
+      <Link to="/liked" className={styles.profileMenu__likedLink}>
         <img src={heartIcon} alt="heart-icon" />
         <h5 className={styles.profileMenu__header}>Favorites</h5>
         <RightOutlined className={styles.profileMenu__rightIcon} />
-      </div>
-      <div className={styles.profileMenu__myProductsLink}>
+      </Link>
+      <Link to="/my-products" className={styles.profileMenu__myProductsLink}>
         <img src={myProductsIcon} alt="products-icon" />
         <h5 className={styles.profileMenu__header}>My products</h5>
         <RightOutlined className={styles.profileMenu__rightIcon} />
-      </div>
-      <div className={styles.profileMenu__logoutLink}>
+      </Link>
+      <Link to="/" className={styles.profileMenu__logoutLink}>
         <img src={logoutIcon} alt="logout-icon" />
         <h5 className={styles.profileMenu__header}>Log out</h5>
         <RightOutlined className={styles.profileMenu__rightIcon} />
-      </div>
+      </Link>
     </div>
   );
 };

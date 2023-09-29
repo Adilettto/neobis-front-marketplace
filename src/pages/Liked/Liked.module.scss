@@ -1,0 +1,20 @@
+.liked {
+    display: flex;
+    gap: 3%;
+    height: 100vh;
+
+    &__rightBlock {
+        background: #F0F0F0;
+        height: 100%;
+        width: 100%;
+        padding-left: 10%;
+        padding-top: 1rem;
+
+        &__container {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+    }
+}
