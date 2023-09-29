@@ -30,12 +30,14 @@
   }
 
   &__likedLink,
+  &__profileLink,
   &__myProductsLink,
   &__logoutLink {
     display: flex;
     gap: 1rem;
     text-decoration: none;
     color: #000;
+    cursor: pointer;
   }
 
   &__logoutLink {
@@ -51,5 +53,16 @@
     margin-right: 12rem;
     margin-top: 0.2rem;
     font-size: 16px;
+  }
+
+  &__modal {
+    text-align: center;
+
+    &_text {
+      font-size: 18px;
+      max-width: 303px;
+      margin: 0 auto;
+      padding-top: 1rem;
+    }
   }
 }
