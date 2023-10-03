@@ -87,7 +87,7 @@ const Profile = () => {
             <p>We will send you an SMS with a confirmation code.</p>
             <InputMask
               className={styles.profile__profileBlock__modalInputMask}
-              mask="0 (000) 000 000"
+              mask="9 (999) 999 999"
               placeholder="0 (000) 000 000"
             />
             <NextBtn text="Next" />
